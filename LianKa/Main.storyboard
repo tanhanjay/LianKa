@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wVl-7h-iwh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--拔草圈-->
+        <scene sceneID="YeW-Ys-qgT">
+            <objects>
+                <viewController id="yEJ-AY-Axu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zX0-Fq-R8a"/>
+                        <viewControllerLayoutGuide type="bottom" id="bOs-4I-fGJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Um-Rz-0s1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="拔草圈" image="拔草圈" id="Z5G-9w-wT5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yqf-gP-vOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.5" y="570"/>
+        </scene>
+        <!--魔发屋-->
+        <scene sceneID="NXL-b4-p8G">
+            <objects>
+                <viewController id="x0S-BO-L59" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rhv-bb-jmr"/>
+                        <viewControllerLayoutGuide type="bottom" id="bdY-y1-8TP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Z1-NJ-Nr1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-wW-os2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="button"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="73" y="300" width="254" height="200"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="pnh-ze-Ibs" kind="popoverPresentation" popoverAnchorView="hIW-wW-os2" id="pXm-2e-8bd">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hIW-wW-os2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hIW-wW-os2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="魔发屋" image="魔发屋" id="lj6-RK-I2t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hw-VR-WhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607.5" y="-627"/>
+        </scene>
+        <!--Face Synthesis View Controller-->
+        <scene sceneID="8lt-Ig-ngH">
+            <objects>
+                <viewController id="pnh-ze-Ibs" customClass="FaceSynthesisViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tlm-JF-E3W"/>
+                        <viewControllerLayoutGuide type="bottom" id="JNC-SD-2hB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v0f-Lp-D1n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOc-aH-Et7">
+                                <rect key="frame" x="20" y="570" width="60" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Zob-FE-gUn"/>
+                                    <constraint firstAttribute="height" constant="30" id="tq0-bE-W7x"/>
+                                </constraints>
+                                <state key="normal" title="更换素材"/>
+                                <connections>
+                                    <action selector="changPhoto:" destination="pnh-ze-Ibs" eventType="touchUpInside" id="Td9-7J-mBT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noy-Vh-T63">
+                                <rect key="frame" x="550" y="570" width="30" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="i4r-Ks-deY"/>
+                                    <constraint firstAttribute="height" constant="30" id="uGn-15-e55"/>
+                                </constraints>
+                                <state key="normal" title="拍照"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="pnh-ze-Ibs" eventType="touchUpInside" id="bJW-wn-BSd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cA-Gz-HMN">
+                                <rect key="frame" x="285" y="570" width="30" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="R71-pu-z2s"/>
+                                    <constraint firstAttribute="height" constant="30" id="ezu-lp-vKf"/>
+                                </constraints>
+                                <state key="normal" title="相册"/>
+                                <connections>
+                                    <action selector="facePhotoByLibrary:" destination="pnh-ze-Ibs" eventType="touchUpInside" id="paI-WQ-7e1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jG-tn-HqL">
+                                <rect key="frame" x="225" y="28" width="150" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BSg-eZ-mJq"/>
+                                    <constraint firstAttribute="width" constant="150" id="dZO-0r-Rn3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsb-e8-oWY">
+                                <rect key="frame" x="270" y="518" width="60" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dnj-0y-qud"/>
+                                    <constraint firstAttribute="height" constant="30" id="n5C-9F-2pD"/>
+                                </constraints>
+                                <state key="normal" title="交换层次"/>
+                                <connections>
+                                    <action selector="changLayout:" destination="pnh-ze-Ibs" eventType="touchUpInside" id="bXl-LK-Pl2"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gQE-ks-tZc">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="7Sm-An-gHa"/>
+                                    <constraint firstAttribute="width" constant="300" id="b1U-GQ-QY3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7jG-tn-HqL" firstAttribute="top" secondItem="tlm-JF-E3W" secondAttribute="bottom" constant="8" id="1NH-4r-QxQ"/>
+                            <constraint firstItem="gQE-ks-tZc" firstAttribute="centerX" secondItem="v0f-Lp-D1n" secondAttribute="centerX" id="AoA-l7-rSZ"/>
+                            <constraint firstItem="gQE-ks-tZc" firstAttribute="centerY" secondItem="v0f-Lp-D1n" secondAttribute="centerY" id="HfX-Wt-9Ea"/>
+                            <constraint firstItem="JNC-SD-2hB" firstAttribute="top" secondItem="Noy-Vh-T63" secondAttribute="bottom" id="TFd-1D-vtr"/>
+                            <constraint firstItem="Hsb-e8-oWY" firstAttribute="centerX" secondItem="v0f-Lp-D1n" secondAttribute="centerX" id="TGN-s8-kua"/>
+                            <constraint firstItem="3cA-Gz-HMN" firstAttribute="top" secondItem="Hsb-e8-oWY" secondAttribute="bottom" constant="22" id="Wb7-ej-0Kv"/>
+                            <constraint firstItem="JNC-SD-2hB" firstAttribute="top" secondItem="VOc-aH-Et7" secondAttribute="bottom" id="XLn-JQ-SGS"/>
+                            <constraint firstItem="7jG-tn-HqL" firstAttribute="centerX" secondItem="v0f-Lp-D1n" secondAttribute="centerX" id="a5B-mI-hg8"/>
+                            <constraint firstItem="3cA-Gz-HMN" firstAttribute="bottom" secondItem="v0f-Lp-D1n" secondAttribute="bottomMargin" id="aaa-l0-laU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Noy-Vh-T63" secondAttribute="trailing" id="l8Y-HC-wfx"/>
+                            <constraint firstItem="VOc-aH-Et7" firstAttribute="leading" secondItem="v0f-Lp-D1n" secondAttribute="leadingMargin" id="w7k-Hh-gxb"/>
+                            <constraint firstItem="3cA-Gz-HMN" firstAttribute="centerX" secondItem="v0f-Lp-D1n" secondAttribute="centerX" id="yrz-4r-PiB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyImageView" destination="gQE-ks-tZc" id="lag-6V-4ep"/>
+                        <outlet property="locationLabel" destination="7jG-tn-HqL" id="yeF-89-Rxb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCt-SK-Jq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="-667.5"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="oYH-op-lxo">
+            <objects>
+                <navigationController id="Hff-EO-pBG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="首页" id="Mb6-5L-tQC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VNq-3u-LGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ida-7V-0F5" kind="relationship" relationship="rootViewController" id="M4V-Dx-zvO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RcN-ot-EEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="-105"/>
+        </scene>
+        <!--商家-->
+        <scene sceneID="Evk-dK-T4g">
+            <objects>
+                <viewController id="HA2-A6-XE9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XXm-IB-82b"/>
+                        <viewControllerLayoutGuide type="bottom" id="EzS-x7-4hE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wC7-vq-USg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="商家" image="商家" id="bdL-ze-Thb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWQ-8J-bnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1822.5" y="-380.25"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="zcf-aQ-HaB">
+            <objects>
+                <viewController id="bYd-23-1hT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zFf-W8-pWC"/>
+                        <viewControllerLayoutGuide type="bottom" id="0iJ-Wk-co4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FyQ-jF-tzk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="我的" id="Uab-3U-aej"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZu-QC-S6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1822.5" y="346.5"/>
+        </scene>
+        <!--Root View Tab Bar Controller-->
+        <scene sceneID="fwI-LL-bGr">
+            <objects>
+                <tabBarController id="wVl-7h-iwh" customClass="RootViewTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="EkD-C9-UP9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.45098039215686275" green="0.74117647058823533" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.98039215686274506" green="0.15686274509803921" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Hff-EO-pBG" kind="relationship" relationship="viewControllers" id="efh-8l-g5q"/>
+                        <segue destination="yEJ-AY-Axu" kind="relationship" relationship="viewControllers" id="s9h-7A-kdk"/>
+                        <segue destination="x0S-BO-L59" kind="relationship" relationship="viewControllers" id="HNT-yO-Jsd"/>
+                        <segue destination="HA2-A6-XE9" kind="relationship" relationship="viewControllers" id="in2-Ta-jIJ"/>
+                        <segue destination="bYd-23-1hT" kind="relationship" relationship="viewControllers" id="sXD-bH-Qx9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2U-m8-uwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-994.5" y="210"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="kV1-8d-wYV">
+            <objects>
+                <viewController id="dd4-2B-z47" customClass="FaceDetecteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Yr-SH-3Pb"/>
+                        <viewControllerLayoutGuide type="bottom" id="6uU-dh-amF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QTl-NI-Sba">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MN6-dp-bOq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="打开相机"/>
+                                <connections>
+                                    <action selector="camerabtnpress:" destination="dd4-2B-z47" eventType="touchUpInside" id="wTg-BJ-qmD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人脸识别" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEe-gZ-2Xa">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4hX-hm-W3j"/>
+                                    <constraint firstAttribute="width" constant="68" id="QPN-nN-Ryt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4hX-hm-W3j"/>
+                                        <exclude reference="QPN-nN-Ryt"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4hX-hm-W3j"/>
+                                        <include reference="QPN-nN-Ryt"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bxr-89-WUP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Pkr-Q2-pw5"/>
+                                </constraints>
+                                <state key="normal" title="从相册中获取"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Pkr-Q2-pw5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Pkr-Q2-pw5"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="librarybtnpress:" destination="dd4-2B-z47" eventType="touchUpInside" id="A7g-E9-662"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYF-US-D2E">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="返回"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="dd4-2B-z47" eventType="touchUpInside" id="oUm-Ku-dM5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QQ20151030-0" translatesAutoresizingMaskIntoConstraints="NO" id="U9M-Zq-U1x">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AIJ-Hp-b2R"/>
+                                    <constraint firstAttribute="width" constant="100" id="dxE-Pn-1hR"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AIJ-Hp-b2R"/>
+                                        <exclude reference="dxE-Pn-1hR"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="AIJ-Hp-b2R"/>
+                                        <include reference="dxE-Pn-1hR"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="hjM-7B-kMh">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="AOE-rD-4ZY"/>
+                                    <constraint firstAttribute="width" constant="300" id="CPI-gy-gOT"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AOE-rD-4ZY"/>
+                                        <exclude reference="CPI-gy-gOT"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="AOE-rD-4ZY"/>
+                                        <include reference="CPI-gy-gOT"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U9M-Zq-U1x" firstAttribute="leading" secondItem="QTl-NI-Sba" secondAttribute="leadingMargin" constant="136" id="1Ml-2p-ZsV"/>
+                            <constraint firstItem="rEe-gZ-2Xa" firstAttribute="centerX" secondItem="QTl-NI-Sba" secondAttribute="centerX" id="3Ho-3O-Ztg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bxr-89-WUP" secondAttribute="trailing" constant="-1" id="5qE-8U-hRh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bxr-89-WUP" secondAttribute="trailing" constant="38" id="7cm-p1-FFV"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Bxr-89-WUP" secondAttribute="bottom" constant="128" id="L6J-ew-bRu"/>
+                            <constraint firstItem="Bxr-89-WUP" firstAttribute="baseline" secondItem="MN6-dp-bOq" secondAttribute="baseline" id="MWn-3U-MOr"/>
+                            <constraint firstItem="MN6-dp-bOq" firstAttribute="leading" secondItem="QTl-NI-Sba" secondAttribute="leadingMargin" constant="18" id="PhO-28-mpE"/>
+                            <constraint firstItem="rEe-gZ-2Xa" firstAttribute="top" secondItem="QTl-NI-Sba" secondAttribute="topMargin" id="SDJ-Od-mjf"/>
+                            <constraint firstItem="U9M-Zq-U1x" firstAttribute="top" secondItem="1Yr-SH-3Pb" secondAttribute="bottom" constant="254" id="WdR-Qs-giZ"/>
+                            <constraint firstItem="6uU-dh-amF" firstAttribute="top" secondItem="Bxr-89-WUP" secondAttribute="bottom" constant="128" id="eT5-co-njo"/>
+                            <constraint firstItem="hjM-7B-kMh" firstAttribute="leading" secondItem="QTl-NI-Sba" secondAttribute="leadingMargin" constant="27" id="md3-Gu-s2r"/>
+                            <constraint firstItem="hjM-7B-kMh" firstAttribute="top" secondItem="QTl-NI-Sba" secondAttribute="topMargin" constant="187" id="qXM-44-59K"/>
+                            <constraint firstItem="U9M-Zq-U1x" firstAttribute="top" secondItem="hjM-7B-kMh" secondAttribute="top" id="ru4-mL-uFt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="MN6-dp-bOq"/>
+                                <exclude reference="rEe-gZ-2Xa"/>
+                                <exclude reference="Bxr-89-WUP"/>
+                                <exclude reference="JYF-US-D2E"/>
+                                <exclude reference="U9M-Zq-U1x"/>
+                                <exclude reference="hjM-7B-kMh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="eT5-co-njo"/>
+                                <exclude reference="5qE-8U-hRh"/>
+                                <exclude reference="7cm-p1-FFV"/>
+                                <exclude reference="L6J-ew-bRu"/>
+                                <exclude reference="MWn-3U-MOr"/>
+                                <exclude reference="PhO-28-mpE"/>
+                                <exclude reference="3Ho-3O-Ztg"/>
+                                <exclude reference="SDJ-Od-mjf"/>
+                                <exclude reference="1Ml-2p-ZsV"/>
+                                <exclude reference="WdR-Qs-giZ"/>
+                                <exclude reference="ru4-mL-uFt"/>
+                                <exclude reference="md3-Gu-s2r"/>
+                                <exclude reference="qXM-44-59K"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="MN6-dp-bOq"/>
+                                <include reference="rEe-gZ-2Xa"/>
+                                <include reference="Bxr-89-WUP"/>
+                                <include reference="JYF-US-D2E"/>
+                                <include reference="U9M-Zq-U1x"/>
+                                <include reference="hjM-7B-kMh"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="eT5-co-njo"/>
+                                <include reference="5qE-8U-hRh"/>
+                                <exclude reference="7cm-p1-FFV"/>
+                                <exclude reference="L6J-ew-bRu"/>
+                                <include reference="MWn-3U-MOr"/>
+                                <include reference="PhO-28-mpE"/>
+                                <include reference="3Ho-3O-Ztg"/>
+                                <include reference="SDJ-Od-mjf"/>
+                                <include reference="1Ml-2p-ZsV"/>
+                                <include reference="WdR-Qs-giZ"/>
+                                <exclude reference="ru4-mL-uFt"/>
+                                <include reference="md3-Gu-s2r"/>
+                                <include reference="qXM-44-59K"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="魔发屋" id="4t6-XG-Qpa"/>
+                    <navigationItem key="navigationItem" id="Ntv-lc-WHQ"/>
+                    <connections>
+                        <outlet property="ageLabel" destination="rEe-gZ-2Xa" id="RGb-gh-Wph"/>
+                        <outlet property="bodyImageVIew" destination="hjM-7B-kMh" id="2To-SQ-EHS"/>
+                        <outlet property="faceImageView" destination="U9M-Zq-U1x" id="OdG-PQ-8Rl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBK-kl-mYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="-617.25"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="pv8-qW-Drd">
+            <objects>
+                <viewController id="ida-7V-0F5" customClass="FirstPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sTs-xH-lCf"/>
+                        <viewControllerLayoutGuide type="bottom" id="9WQ-2a-L59"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6n2-Gj-FKP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXX-ad-t8f">
+                                <rect key="frame" x="132" y="335" width="124" height="70"/>
+                                <animations/>
+                                <inset key="titleEdgeInsets" minX="-29" minY="90" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="40" minY="-40" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="护发贴士" image="护发贴士">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="125" y="325" width="150" height="150"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8B-eB-Yle">
+                                <rect key="frame" x="132" y="335" width="124" height="70"/>
+                                <animations/>
+                                <inset key="titleEdgeInsets" minX="-29" minY="90" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="40" minY="-40" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="上门美发" image="上门美发">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="325" width="150" height="150"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19u-WK-0Hh">
+                                <rect key="frame" x="132" y="335" width="124" height="70"/>
+                                <animations/>
+                                <inset key="titleEdgeInsets" minX="-29" minY="90" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="40" minY="-40" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="美发教程" image="美发教程">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-6" y="325" width="150" height="150"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="E8B-eB-Yle"/>
+                                <exclude reference="19u-WK-0Hh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="E8B-eB-Yle"/>
+                                <include reference="19u-WK-0Hh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="zie-Rz-CEs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDJ-hu-frk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1924.5" y="-105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3" width="300" height="300"/>
+        <image name="QQ20151030-0" width="74" height="71"/>
+        <image name="button" width="200" height="200"/>
+        <image name="上门美发" width="70" height="70"/>
+        <image name="商家" width="30" height="30"/>
+        <image name="我的" width="21" height="30"/>
+        <image name="护发贴士" width="70" height="70"/>
+        <image name="拔草圈" width="30" height="30"/>
+        <image name="美发教程" width="70" height="70"/>
+        <image name="首页" width="30" height="30"/>
+        <image name="魔发屋" width="30" height="30"/>
+    </resources>
+</document>
