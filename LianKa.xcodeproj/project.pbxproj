@@ -14,6 +14,7 @@
 		D7619C811BFC3D9200C48219 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7619C801BFC3D9200C48219 /* Main.storyboard */; };
 		D7619C841BFC3EAF00C48219 /* FaceImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7619C831BFC3EAF00C48219 /* FaceImageView.m */; };
 		D7619C871BFC3FF500C48219 /* FaceSynthesisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7619C861BFC3FF500C48219 /* FaceSynthesisViewController.m */; };
+		D7619C8D1BFC460E00C48219 /* Face83Position.m in Sources */ = {isa = PBXBuildFile; fileRef = D7619C8C1BFC460E00C48219 /* Face83Position.m */; };
 		D7B3FDD41BFC3AAA00D5E6A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FDD31BFC3AAA00D5E6A2 /* main.m */; };
 		D7B3FDD71BFC3AAA00D5E6A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FDD61BFC3AAA00D5E6A2 /* AppDelegate.m */; };
 		D7B3FDDA1BFC3AAA00D5E6A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FDD91BFC3AAA00D5E6A2 /* ViewController.m */; };
@@ -57,6 +58,8 @@
 		D7619C831BFC3EAF00C48219 /* FaceImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceImageView.m; sourceTree = "<group>"; };
 		D7619C851BFC3FF500C48219 /* FaceSynthesisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceSynthesisViewController.h; sourceTree = "<group>"; };
 		D7619C861BFC3FF500C48219 /* FaceSynthesisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceSynthesisViewController.m; sourceTree = "<group>"; };
+		D7619C8B1BFC460E00C48219 /* Face83Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Face83Position.h; sourceTree = "<group>"; };
+		D7619C8C1BFC460E00C48219 /* Face83Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Face83Position.m; sourceTree = "<group>"; };
 		D7B3FDCF1BFC3AAA00D5E6A2 /* LianKa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LianKa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B3FDD31BFC3AAA00D5E6A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7B3FDD51BFC3AAA00D5E6A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 		D7619C701BFC3CC400C48219 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				D7619C8B1BFC460E00C48219 /* Face83Position.h */,
+				D7619C8C1BFC460E00C48219 /* Face83Position.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				D7619C7C1BFC3D5F00C48219 /* FaceDetecteViewController.m in Sources */,
 				D7619C841BFC3EAF00C48219 /* FaceImageView.m in Sources */,
 				D7B3FDD41BFC3AAA00D5E6A2 /* main.m in Sources */,
+				D7619C8D1BFC460E00C48219 /* Face83Position.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
