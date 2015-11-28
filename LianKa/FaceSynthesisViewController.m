@@ -271,6 +271,11 @@
         [MBProgressHUD hideHUDForView:self.view animated:YES];
     }]];
 }
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
 
 - (IBAction)changLayout:(id)sender {
     if ((self.isfaceviewtop=!self.isfaceviewtop)) {

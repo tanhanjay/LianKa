@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72BA3641C084CA8003745DF /* myTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA3631C084CA8003745DF /* myTableView.m */; };
+		D72BA3671C084CE5003745DF /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA3661C084CE5003745DF /* MyViewController.m */; };
 		D7619C751BFC3D1A00C48219 /* locationbuttonview.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7619C741BFC3D1A00C48219 /* locationbuttonview.xib */; };
 		D7619C7C1BFC3D5F00C48219 /* FaceDetecteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7619C771BFC3D5F00C48219 /* FaceDetecteViewController.m */; };
 		D7619C7D1BFC3D5F00C48219 /* RootViewTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7619C791BFC3D5F00C48219 /* RootViewTabBarController.m */; };
@@ -22,6 +24,7 @@
 		D7B3FDE21BFC3AAA00D5E6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B3FDE01BFC3AAA00D5E6A2 /* LaunchScreen.storyboard */; };
 		D7B3FDED1BFC3AAA00D5E6A2 /* LianKaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FDEC1BFC3AAA00D5E6A2 /* LianKaTests.m */; };
 		D7B3FDF81BFC3AAA00D5E6A2 /* LianKaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FDF71BFC3AAA00D5E6A2 /* LianKaUITests.m */; };
+		D7E952681C0841E100C82737 /* BaCaoQuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E952671C0841E100C82737 /* BaCaoQuanViewController.m */; };
 		E91A66FC778A909453BF3B33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EED4D81F36CA863A4807FEA6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,10 @@
 /* Begin PBXFileReference section */
 		19D94CD0037A9D67CD97DA82 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7ACF4DF8E4BBE69C43E4BE17 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D72BA3621C084CA8003745DF /* myTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableView.h; sourceTree = "<group>"; };
+		D72BA3631C084CA8003745DF /* myTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableView.m; sourceTree = "<group>"; };
+		D72BA3651C084CE5003745DF /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		D72BA3661C084CE5003745DF /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		D7619C741BFC3D1A00C48219 /* locationbuttonview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = locationbuttonview.xib; sourceTree = "<group>"; };
 		D7619C761BFC3D5F00C48219 /* FaceDetecteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetecteViewController.h; sourceTree = "<group>"; };
 		D7619C771BFC3D5F00C48219 /* FaceDetecteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetecteViewController.m; sourceTree = "<group>"; };
@@ -75,6 +82,8 @@
 		D7B3FDF31BFC3AAA00D5E6A2 /* LianKaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LianKaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B3FDF71BFC3AAA00D5E6A2 /* LianKaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LianKaUITests.m; sourceTree = "<group>"; };
 		D7B3FDF91BFC3AAA00D5E6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7E952661C0841E100C82737 /* BaCaoQuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaCaoQuanViewController.h; sourceTree = "<group>"; };
+		D7E952671C0841E100C82737 /* BaCaoQuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaCaoQuanViewController.m; sourceTree = "<group>"; };
 		EED4D81F36CA863A4807FEA6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +145,8 @@
 				D7619C821BFC3EAF00C48219 /* FaceImageView.h */,
 				D7619C831BFC3EAF00C48219 /* FaceImageView.m */,
 				D7619C741BFC3D1A00C48219 /* locationbuttonview.xib */,
+				D72BA3621C084CA8003745DF /* myTableView.h */,
+				D72BA3631C084CA8003745DF /* myTableView.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -151,6 +162,10 @@
 				D7619C7B1BFC3D5F00C48219 /* FirstPageViewController.m */,
 				D7619C851BFC3FF500C48219 /* FaceSynthesisViewController.h */,
 				D7619C861BFC3FF500C48219 /* FaceSynthesisViewController.m */,
+				D7E952661C0841E100C82737 /* BaCaoQuanViewController.h */,
+				D7E952671C0841E100C82737 /* BaCaoQuanViewController.m */,
+				D72BA3651C084CE5003745DF /* MyViewController.h */,
+				D72BA3661C084CE5003745DF /* MyViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -408,10 +423,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72BA3641C084CA8003745DF /* myTableView.m in Sources */,
 				D7619C871BFC3FF500C48219 /* FaceSynthesisViewController.m in Sources */,
 				D7B3FDDA1BFC3AAA00D5E6A2 /* ViewController.m in Sources */,
+				D7E952681C0841E100C82737 /* BaCaoQuanViewController.m in Sources */,
 				D7B3FDD71BFC3AAA00D5E6A2 /* AppDelegate.m in Sources */,
 				D7619C7E1BFC3D5F00C48219 /* FirstPageViewController.m in Sources */,
+				D72BA3671C084CE5003745DF /* MyViewController.m in Sources */,
 				D7619C7D1BFC3D5F00C48219 /* RootViewTabBarController.m in Sources */,
 				D7619C7C1BFC3D5F00C48219 /* FaceDetecteViewController.m in Sources */,
 				D7619C841BFC3EAF00C48219 /* FaceImageView.m in Sources */,

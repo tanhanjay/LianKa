@@ -9,6 +9,9 @@
 #import "FirstPageViewController.h"
 #import "SDCycleScrollView.h"
 @interface FirstPageViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *firstPageScrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *chaodianScrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *tehuiScrollView;
 
 
 @end
@@ -29,9 +32,12 @@
     [imagesArray addObject:[UIImage imageNamed:@"今日潮流合并1"]];
     [imagesArray addObject:[UIImage imageNamed:@"今日潮流合并2"]];
     [imagesArray addObject:[UIImage imageNamed:@"今日潮流合并3"]];
-    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 44, [UIScreen mainScreen].bounds.size.width, 260) imagesGroup:imagesArray];
+    SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 260) imagesGroup:imagesArray];
     cycleScrollView.autoScrollTimeInterval = 3;
-    [self.view addSubview:cycleScrollView];
+    [self.firstPageScrollView addSubview:cycleScrollView];
+    self.chaodianScrollView.contentSize = CGSizeMake(442, 110);
+    self.firstPageScrollView.contentSize = CGSizeMake(375, 900);
+    self.tehuiScrollView.contentSize = CGSizeMake(496, 140);
 }
 
 - (void)didReceiveMemoryWarning {

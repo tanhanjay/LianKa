@@ -17,10 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.tabBar.tintColor = [UIColor colorWithRed:254.0/255.0 green:67.0/255.0 blue:67.0/255.0 alpha:1];
+    self.tabBar.tintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
     self.tabBar.backgroundImage = [UIImage imageNamed:@"bgcolor"];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:1 green:1 blue:1 alpha:1], UITextAttributeTextColor, nil]
-                                             forState:UIControlStateNormal];
     }
 
 - (void)didReceiveMemoryWarning {
