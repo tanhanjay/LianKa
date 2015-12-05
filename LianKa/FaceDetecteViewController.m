@@ -203,6 +203,7 @@
                 }];
 
             }
+            self.ageLabel.text = [NSString stringWithFormat:@"您的年龄大约是%@",[result content][@"face"][0][@"attribute"][@"age"][@"value"]];
         }
         
         else {

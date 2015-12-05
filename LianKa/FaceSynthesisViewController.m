@@ -10,7 +10,7 @@
 #import "MBProgressHUD.h"
 #import "APIKey+APISecret.h"
 #import "FaceppAPI.h"
-
+#import "Face83Position.h"
 
 @interface FaceSynthesisViewController ()
 @property (strong, nonatomic) FaceImageView *faceImageView;
@@ -19,6 +19,7 @@
 @property (nonatomic,strong) UIImageView *currentImageView;
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (nonatomic,assign) BOOL isfaceviewtop;
+@property (nonatomic,copy) NSString *faceId;
 @end
 
 @implementation FaceSynthesisViewController
@@ -28,7 +29,7 @@
     NSString *API_KEY = _API_KEY;
     NSString *API_SECRET = _API_SECRET;
     [FaceppAPI initWithApiKey:API_KEY andApiSecret:API_SECRET andRegion:APIServerRegionCN];
-    [FaceppAPI setDebugMode:YES];
+    [FaceppAPI setDebugMode:NO];
    
 }
 
@@ -251,6 +252,12 @@
                 //抠脸
                 
                 faceimage = [self clipImageWithRect:rect andImage:image];
+                self.locationLabel.text = [NSString stringWithFormat:@"您的年龄大约是%@",[result content][@"face"][0][@"attribute"][@"age"][@"value"]];
+//                NSLog(@"%@",[result content][@"face"][0]);
+                self.faceId = [result content][@"face"][0][@"face_id"];
+                FaceppResult *landMark83PResult = [[FaceppAPI detection]landmarkWithFaceId:self.faceId andType:FaceppLandmark83P];
+                Face83Position * postionModel = [Face83Position getInstanceWithFaceppResult:landMark83PResult];
+                NSLog(@"完成");
             }
         }
         
