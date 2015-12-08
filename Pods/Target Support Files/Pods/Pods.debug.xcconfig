@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FaceppSDK" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/SDCycleScrollView" "${PODS_ROOT}/Headers/Public/SDWebImage"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FaceppSDK" -isystem "${PODS_ROOT}/Headers/Public/MBProgressHUD" -isystem "${PODS_ROOT}/Headers/Public/Reachability" -isystem "${PODS_ROOT}/Headers/Public/SDCycleScrollView" -isystem "${PODS_ROOT}/Headers/Public/SDWebImage"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FaceppSDK" -l"MBProgressHUD" -l"Reachability" -l"SDCycleScrollView" -l"SDWebImage" -framework "CoreGraphics" -framework "Foundation" -framework "ImageIO" -framework "SystemConfiguration" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}/Pods
