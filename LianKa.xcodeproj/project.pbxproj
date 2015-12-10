@@ -24,6 +24,8 @@
 		D7B3FDE21BFC3AAA00D5E6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7B3FDE01BFC3AAA00D5E6A2 /* LaunchScreen.storyboard */; };
 		D7B3FDED1BFC3AAA00D5E6A2 /* LianKaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FDEC1BFC3AAA00D5E6A2 /* LianKaTests.m */; };
 		D7B3FDF81BFC3AAA00D5E6A2 /* LianKaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B3FDF71BFC3AAA00D5E6A2 /* LianKaUITests.m */; };
+		D7BF3A911C1712C7008860C9 /* dressSimulateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF3A901C1712C7008860C9 /* dressSimulateVC.m */; };
+		D7BF3A941C171422008860C9 /* MyFaceDection.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF3A931C171422008860C9 /* MyFaceDection.m */; };
 		D7E952681C0841E100C82737 /* BaCaoQuanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E952671C0841E100C82737 /* BaCaoQuanViewController.m */; };
 		E91A66FC778A909453BF3B33 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EED4D81F36CA863A4807FEA6 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -82,6 +84,10 @@
 		D7B3FDF31BFC3AAA00D5E6A2 /* LianKaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LianKaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B3FDF71BFC3AAA00D5E6A2 /* LianKaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LianKaUITests.m; sourceTree = "<group>"; };
 		D7B3FDF91BFC3AAA00D5E6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BF3A8F1C1712C7008860C9 /* dressSimulateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dressSimulateVC.h; sourceTree = "<group>"; };
+		D7BF3A901C1712C7008860C9 /* dressSimulateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dressSimulateVC.m; sourceTree = "<group>"; };
+		D7BF3A921C171422008860C9 /* MyFaceDection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFaceDection.h; sourceTree = "<group>"; };
+		D7BF3A931C171422008860C9 /* MyFaceDection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFaceDection.m; sourceTree = "<group>"; };
 		D7E952661C0841E100C82737 /* BaCaoQuanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaCaoQuanViewController.h; sourceTree = "<group>"; };
 		D7E952671C0841E100C82737 /* BaCaoQuanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaCaoQuanViewController.m; sourceTree = "<group>"; };
 		EED4D81F36CA863A4807FEA6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +141,8 @@
 			children = (
 				D7619C8B1BFC460E00C48219 /* Face83Position.h */,
 				D7619C8C1BFC460E00C48219 /* Face83Position.m */,
+				D7BF3A921C171422008860C9 /* MyFaceDection.h */,
+				D7BF3A931C171422008860C9 /* MyFaceDection.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -166,6 +174,8 @@
 				D7E952671C0841E100C82737 /* BaCaoQuanViewController.m */,
 				D72BA3651C084CE5003745DF /* MyViewController.h */,
 				D72BA3661C084CE5003745DF /* MyViewController.m */,
+				D7BF3A8F1C1712C7008860C9 /* dressSimulateVC.h */,
+				D7BF3A901C1712C7008860C9 /* dressSimulateVC.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -423,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7BF3A911C1712C7008860C9 /* dressSimulateVC.m in Sources */,
 				D72BA3641C084CA8003745DF /* myTableView.m in Sources */,
 				D7619C871BFC3FF500C48219 /* FaceSynthesisViewController.m in Sources */,
 				D7B3FDDA1BFC3AAA00D5E6A2 /* ViewController.m in Sources */,
@@ -433,6 +444,7 @@
 				D7619C7D1BFC3D5F00C48219 /* RootViewTabBarController.m in Sources */,
 				D7619C7C1BFC3D5F00C48219 /* FaceDetecteViewController.m in Sources */,
 				D7619C841BFC3EAF00C48219 /* FaceImageView.m in Sources */,
+				D7BF3A941C171422008860C9 /* MyFaceDection.m in Sources */,
 				D7B3FDD41BFC3AAA00D5E6A2 /* main.m in Sources */,
 				D7619C8D1BFC460E00C48219 /* Face83Position.m in Sources */,
 			);
