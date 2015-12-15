@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7197E571C2024510089166C /* SorceMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = D7197E561C2024510089166C /* SorceMatch.m */; };
 		D72BA3641C084CA8003745DF /* myTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA3631C084CA8003745DF /* myTableView.m */; };
 		D72BA3671C084CE5003745DF /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA3661C084CE5003745DF /* MyViewController.m */; };
 		D7619C751BFC3D1A00C48219 /* locationbuttonview.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7619C741BFC3D1A00C48219 /* locationbuttonview.xib */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		19D94CD0037A9D67CD97DA82 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7ACF4DF8E4BBE69C43E4BE17 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D7197E551C2024510089166C /* SorceMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SorceMatch.h; sourceTree = "<group>"; };
+		D7197E561C2024510089166C /* SorceMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SorceMatch.m; sourceTree = "<group>"; };
 		D72BA3621C084CA8003745DF /* myTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myTableView.h; sourceTree = "<group>"; };
 		D72BA3631C084CA8003745DF /* myTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myTableView.m; sourceTree = "<group>"; };
 		D72BA3651C084CE5003745DF /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 				D7619C8C1BFC460E00C48219 /* Face83Position.m */,
 				D7BF3A921C171422008860C9 /* MyFaceDection.h */,
 				D7BF3A931C171422008860C9 /* MyFaceDection.m */,
+				D7197E551C2024510089166C /* SorceMatch.h */,
+				D7197E561C2024510089166C /* SorceMatch.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -445,6 +450,7 @@
 				D7619C7C1BFC3D5F00C48219 /* FaceDetecteViewController.m in Sources */,
 				D7619C841BFC3EAF00C48219 /* FaceImageView.m in Sources */,
 				D7BF3A941C171422008860C9 /* MyFaceDection.m in Sources */,
+				D7197E571C2024510089166C /* SorceMatch.m in Sources */,
 				D7B3FDD41BFC3AAA00D5E6A2 /* main.m in Sources */,
 				D7619C8D1BFC460E00C48219 /* Face83Position.m in Sources */,
 			);

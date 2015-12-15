@@ -128,7 +128,9 @@
 - (FaceppResult *)faceDetectionWithImage:(UIImage *)image{
     image = [self fixOrientation:image];
     FaceppResult *result = [[FaceppAPI detection]detectWithURL:nil orImageData:UIImageJPEGRepresentation(image, 0.5) mode:FaceppDetectionModeOneFace attribute:FaceppDetectionAttributeAll];
-    
+    if ([[result content][@"face"] count]==0) {
+        result.success = NO;
+    }
     return result;
 }
 

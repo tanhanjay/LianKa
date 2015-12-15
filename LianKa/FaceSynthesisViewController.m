@@ -12,6 +12,9 @@
 #import "FaceppAPI.h"
 #import "Face83Position.h"
 
+//此为匹配发型并合成功能模块的视图控制器，工作流程如下：拍照(相册选择)->调用识别和匹配模块->确定素材框的位置（允许用户调整位置和大小）->
+
+
 @interface FaceSynthesisViewController ()
 @property (strong, nonatomic) FaceImageView *faceImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *bodyImageView;

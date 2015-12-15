@@ -11,6 +11,10 @@
 #import "FaceppAPI.h"
 @interface Face83Position : NSObject
 
+
+//此模块专门对FaceppSDK的标记83点方法返回的结果进行封装，每个关键点的类型为CGPoint，此位置是的单位为百分比，若为100之外的数，说明此点位置位于图外（Facepp对它进行了推断）
+
+
 //83点
 @property(nonatomic,assign) CGPoint contour_chin;
 @property(nonatomic,assign) CGPoint contour_left1;
